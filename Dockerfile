@@ -23,14 +23,13 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     torchvision \
     torchaudio \
     seaborn \
-    tensorly \
     dask \
     distributed \
     dask-jobqueue \
     tensorly \
-    tensorly-dask \
     polars \
     && mamba clean --all -f -y
 
+RUN pip install tensorly[dask]
     
 USER ${NB_UID}
