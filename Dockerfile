@@ -24,6 +24,7 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     torchaudio \
     seaborn \
     tensorly \
+    dask \
     && mamba clean --all -f -y
 
     
