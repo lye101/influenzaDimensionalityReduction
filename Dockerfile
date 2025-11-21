@@ -25,6 +25,11 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     seaborn \
     tensorly \
     dask \
+    distributed \
+    dask-jobqueue \
+    tensorly \
+    tensorly-dask \
+    polars \
     && mamba clean --all -f -y
 
     
