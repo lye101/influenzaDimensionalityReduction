@@ -20,14 +20,13 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     scikit-learn \
     tensorflow \
     pytorch \
-    torchvision \
-    torchaudio \
     seaborn \
     dask \
     distributed \
     dask-jobqueue \
     tensorly \
     polars \
+    hdf5 \
     && mamba clean --all -f -y
 
 RUN pip install tensorly[dask]
