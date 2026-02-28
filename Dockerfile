@@ -28,6 +28,7 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     polars \
     hdf5 \
     umap-learn \
+    phate \
     && mamba clean --all -f -y
 
 RUN pip install tensorly[dask]
