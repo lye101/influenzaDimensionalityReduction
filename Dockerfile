@@ -31,6 +31,6 @@ RUN mamba install -c conda-forge -c pytorch -c nvidia --yes \
     phate \
     && mamba clean --all -f -y
 
-RUN pip install tensorly[dask]
+RUN pip install phate tensorly[dask]
     
 USER ${NB_UID}
